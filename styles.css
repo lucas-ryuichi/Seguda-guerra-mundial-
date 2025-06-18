@@ -1,83 +1,134 @@
-    /* Reset de estilos básicos */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-  
-      /* Estilos globais */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-        padding: 20px;
-      }
-  
-      h1 {
-        text-align: center;
-        color: #2e3d49;
-        margin-bottom: 20px;
-      }
-  
-      h2 {
-        color: #2e3d49;
-        margin-top: 20px;
-      }
-  
-      .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-  
-      .section {
-        margin-bottom: 20px;
-      }
-  
-      .intro {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-        color: #555;
-      }
-  
-      .content {
-        font-size: 1.1em;
-        line-height: 1.8;
-        color: #444;
-      }
-  
-      .image {
-        width: 100%;
-        max-width: 600px;
-        display: block;
-        margin: 20px auto;
-      }
-  
-      table {
-        width: 100%;
-        margin-top: 30px;
-        border-collapse: collapse;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-  
-      th, td {
-        padding: 10px;
-        text-align: left;
-        border: 1px solid #ddd;
-      }
-  
-      th {
-        background-color: #f2f2f2;
-        color: #333;
-      }
-  
-      .footer {
-        text-align: center;
-        font-size: 0.9em;
-        color: #777;
-        margin-top: 40px;
-      }
+   /* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font for a modern feel */
+    background: linear-gradient(to right, #e0f2f7, #c1e4f4); /* Subtle gradient background */
+    color: #333;
+    line-height: 1.7; /* Slightly increased line height for readability */
+    padding: 30px; /* Increased padding */
+}
+
+h1 {
+    text-align: center;
+    color: #1a5276; /* Deeper blue */
+    margin-bottom: 30px; /* More space */
+    font-size: 2.8em; /* Larger title */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+h2 {
+    color: #2173a1; /* Medium blue */
+    margin-top: 35px; /* More top margin */
+    margin-bottom: 15px; /* More bottom margin */
+    border-bottom: 2px solid #a9d9e7; /* Underline for emphasis */
+    padding-bottom: 5px;
+}
+
+h3 { /* Added H3 styles for sub-sections */
+    color: #388ba8; /* Slightly lighter blue */
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1050px; /* Slightly wider container */
+    margin: 0 auto;
+    padding: 30px; /* Increased padding inside container */
+    background-color: #ffffff;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
+}
+
+.section {
+    margin-bottom: 30px; /* More space between sections */
+    padding: 20px;
+    background-color: #f8fcfd; /* Slightly different background for sections */
+    border-left: 5px solid #5dace1; /* A colorful left border */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Lighter shadow for sections */
+}
+
+.intro {
+    font-size: 1.3em; /* Slightly larger intro text */
+    margin-bottom: 25px;
+    color: #4a6a7c; /* Darker, more muted blue for intro */
+    font-style: italic; /* Italic intro */
+    border-bottom: 1px dashed #c0e0eb; /* Dashed line under intro */
+    padding-bottom: 10px;
+}
+
+p { /* General paragraph styling */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+ul, ol { /* List styling */
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.image {
+    width: 100%;
+    max-width: 650px; /* Slightly larger max-width for images */
+    height: auto; /* Ensure aspect ratio is maintained */
+    display: block;
+    margin: 30px auto; /* More margin around images */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Shadow for images */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image:hover {
+    transform: scale(1.02); /* Slightly enlarge image on hover */
+}
+
+table {
+    width: 100%;
+    margin-top: 35px; /* More margin */
+    border-collapse: separate; /* Use separate to allow border-radius on cells */
+    border-spacing: 0; /* Remove space between cell borders */
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners for table */
+    overflow: hidden; /* Ensures rounded corners clip content */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 18px; /* More padding in table cells */
+    text-align: left;
+    border-bottom: 1px solid #e0f2f7; /* Lighter border */
+}
+
+th {
+    background-color: #a9d9e7; /* Light blue background for header */
+    color: #1a5276; /* Darker text for header */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase table headers */
+}
+
+tr:nth-child(even) { /* Zebra striping for table rows */
+    background-color: #f8fcfd;
+}
+
+tr:hover { /* Hover effect for table rows */
+    background-color: #e0f4fc;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.95em; /* Slightly larger footer text */
+    color: #6a828e; /* Muted color for footer */
+    margin-top: 50px; /* More space above footer */
+    padding-top: 20px;
+    border-top: 1px solid #e0f2f7; /* Light border above footer */
+}
