@@ -1,4 +1,4 @@
-   /* Reset de estilos básicos */
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -7,128 +7,183 @@
 
 /* Estilos globais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font for a modern feel */
-    background: linear-gradient(to right, #e0f2f7, #c1e4f4); /* Subtle gradient background */
-    color: #333;
-    line-height: 1.7; /* Slightly increased line height for readability */
-    padding: 30px; /* Increased padding */
+    /* Fonte com serifa elegante, remetendo a manuscritos antigos ou convites formais */
+    font-family: 'Playfair Display', 'Crimson Text', serif; 
+    background: linear-gradient(to bottom, #0d0d0d, #1a0a0a); /* Gradiente sutil do preto ao vermelho-escuro */
+    color: #f0f0f0; /* Texto em off-white, como pergaminho antigo */
+    line-height: 1.8; /* Aumenta a legibilidade */
+    padding: 50px; /* Mais espaço nas bordas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra mais intensa para o texto */
 }
 
 h1 {
     text-align: center;
-    color: #1a5276; /* Deeper blue */
-    margin-bottom: 30px; /* More space */
-    font-size: 2.8em; /* Larger title */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    color: #b22222; /* Vermelho escuro e rico, como vinho ou sangue antigo */
+    margin-bottom: 50px;
+    font-size: 4em; /* Título grandioso e imponente */
+    /* Uma fonte gótica ou formal serif, se importada (ex: 'Cinzel Decorative') */
+    font-family: 'Cinzel Decorative', serif; 
+    text-transform: uppercase; /* Maiúsculas para drama */
+    letter-spacing: 4px; /* Espaçamento dramático entre letras */
+    border-bottom: 2px solid #5a0000; /* Borda escura e rica */
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9); /* Sombra pesada para o título */
+    /* Efeito de brilho sutil */
+    text-shadow: 0 0 10px #b22222, 0 0 20px #b22222; 
 }
 
 h2 {
-    color: #2173a1; /* Medium blue */
-    margin-top: 35px; /* More top margin */
-    margin-bottom: 15px; /* More bottom margin */
-    border-bottom: 2px solid #a9d9e7; /* Underline for emphasis */
-    padding-bottom: 5px;
+    color: #8b0000; /* Vermelho mais escuro e profundo */
+    margin-top: 45px;
+    margin-bottom: 25px;
+    border-bottom: 1px dotted #4a0000; /* Linha pontilhada sutil */
+    padding-bottom: 10px;
+    font-size: 2.5em;
+    font-style: italic; /* Subtítulos em itálico para elegância */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-h3 { /* Added H3 styles for sub-sections */
-    color: #388ba8; /* Slightly lighter blue */
-    margin-top: 25px;
-    margin-bottom: 10px;
+h3 {
+    color: #9a1616; /* Tom de vermelho um pouco mais claro */
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-left: 4px solid #660000; /* Borda lateral marcante */
+    padding-left: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 .container {
-    max-width: 1050px; /* Slightly wider container */
+    max-width: 950px; /* Largura um pouco maior para um visual mais suntuoso */
     margin: 0 auto;
-    padding: 30px; /* Increased padding inside container */
-    background-color: #ffffff;
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
+    padding: 40px;
+    background-color: #1c1c1c; /* Fundo escuro, quase veludo */
+    border-radius: 8px; /* Cantos levemente arredondados */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); /* Sombra muito pesada para profundidade */
+    border: 1px solid #4a0000; /* Borda sutil em vermelho escuro */
 }
 
 .section {
-    margin-bottom: 30px; /* More space between sections */
-    padding: 20px;
-    background-color: #f8fcfd; /* Slightly different background for sections */
-    border-left: 5px solid #5dace1; /* A colorful left border */
-    border-radius: 8px; /* Rounded corners for sections */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Lighter shadow for sections */
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #242424; /* Fundo das seções um pouco mais claro que o container */
+    border: 1px solid #660000; /* Borda em tom de vermelho */
+    border-radius: 6px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra interna para efeito de entalhe */
+    position: relative; /* Para possíveis decorações */
+}
+
+/* Detalhe sutil para seções - "V" invertido ou ornamento */
+.section::before {
+    content: ''; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #660000; /* Um pequeno triângulo na parte superior central da seção */
+    opacity: 0.7;
 }
 
 .intro {
-    font-size: 1.3em; /* Slightly larger intro text */
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: #330000; /* Fundo vermelho bem escuro para introdução */
+    border: 1px solid #8b0000; /* Borda mais forte para introdução */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    margin-bottom: 20px;
+    color: #d0d0d0; /* Cor para os parágrafos */
+}
+
+a {
+    color: #b22222; /* Links em vermelho sangue */
+    text-decoration: none;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+}
+
+a:hover {
+    color: #ff4500; /* Um vermelho mais vibrante no hover */
+    text-decoration: underline;
+    text-shadow: 0 0 8px #ff4500; /* Brilho no hover */
+}
+
+ul, ol {
+    margin-left: 40px;
     margin-bottom: 25px;
-    color: #4a6a7c; /* Darker, more muted blue for intro */
-    font-style: italic; /* Italic intro */
-    border-bottom: 1px dashed #c0e0eb; /* Dashed line under intro */
-    padding-bottom: 10px;
-}
-
-p { /* General paragraph styling */
-    margin-bottom: 15px; /* Space between paragraphs */
-}
-
-ul, ol { /* List styling */
-    margin-left: 25px;
-    margin-bottom: 15px;
+    color: #c0c0c0;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    list-style-type: disc; /* Marcadores redondos para listas não ordenadas */
+    /* Para ordered lists, talvez um estilo de numeração mais ornado, mas o padrão é ok */
 }
 
 .image {
     width: 100%;
-    max-width: 650px; /* Slightly larger max-width for images */
-    height: auto; /* Ensure aspect ratio is maintained */
+    max-width: 750px;
+    height: auto;
     display: block;
-    margin: 30px auto; /* More margin around images */
-    border-radius: 10px; /* Rounded corners for images */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Shadow for images */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin: 40px auto;
+    border: 3px solid #660000; /* Borda mais grossa em tom de vermelho */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); /* Sombra profunda */
+    transition: transform 0.4s ease, border-color 0.4s ease;
 }
 
 .image:hover {
-    transform: scale(1.02); /* Slightly enlarge image on hover */
+    transform: scale(1.02);
+    border-color: #b22222; /* Borda vermelha vibrante no hover */
 }
 
 table {
     width: 100%;
-    margin-top: 35px; /* More margin */
-    border-collapse: separate; /* Use separate to allow border-radius on cells */
-    border-spacing: 0; /* Remove space between cell borders */
-    background-color: #ffffff;
-    border-radius: 10px; /* Rounded corners for table */
-    overflow: hidden; /* Ensures rounded corners clip content */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 45px;
+    border-collapse: collapse;
+    background-color: #2c2c2c; /* Fundo da tabela escuro */
+    border: 1px solid #5a0000; /* Borda da tabela em vermelho escuro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 th, td {
-    padding: 12px 18px; /* More padding in table cells */
+    padding: 18px 25px;
     text-align: left;
-    border-bottom: 1px solid #e0f2f7; /* Lighter border */
+    border: 1px solid #4a0000; /* Bordas internas em tom de vermelho escuro */
+    color: #f0f0f0;
 }
 
 th {
-    background-color: #a9d9e7; /* Light blue background for header */
-    color: #1a5276; /* Darker text for header */
+    background-color: #330000; /* Fundo do cabeçalho da tabela em vermelho vinho */
+    color: #ff6347; /* Vermelho tomate para cabeçalhos (um toque de cor vibrante) */
     font-weight: bold;
-    text-transform: uppercase; /* Uppercase table headers */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-tr:nth-child(even) { /* Zebra striping for table rows */
-    background-color: #f8fcfd;
+tr:nth-child(even) { /* Linhas alternadas */
+    background-color: #222222; /* Fundo mais escuro para linhas pares */
 }
 
-tr:hover { /* Hover effect for table rows */
-    background-color: #e0f4fc;
+tr:hover {
+    background-color: #3d0000; /* Fundo vermelho escuro no hover */
     cursor: pointer;
 }
 
 .footer {
     text-align: center;
-    font-size: 0.95em; /* Slightly larger footer text */
-    color: #6a828e; /* Muted color for footer */
-    margin-top: 50px; /* More space above footer */
-    padding-top: 20px;
-    border-top: 1px solid #e0f2f7; /* Light border above footer */
+    font-size: 0.95em;
+    color: #8b0000; /* Cor vermelha escura para o rodapé */
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px dotted #4a0000; /* Linha pontilhada acima do rodapé */
 }
